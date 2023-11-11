@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8" />
@@ -13,17 +13,24 @@
     <!-- header>h1{Test de menu} -->
     <header>
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            menu
+            Menu
         </button>
         <h1>Test de menu</h1>
         <script defer src="https://unpkg.com/alpinejs"></script>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+            </ul>
+        </nav>
         <style>
             .menu {
                 position: fixed;
                 top: 0;
                 left: 0;
-                width: 100wh;
-                height: 100wh;
+                width: 100vw;
+                height: 100vh;
                 background: #fff;
                 display: grid;
                 place-content: center;
@@ -32,6 +39,7 @@
             .header__menuBtn {
                 position: relative;
                 z-index: 10;
+
             }
 
             .noscroll,
@@ -40,13 +48,10 @@
             }
         </style>
 
-<nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-    <ul>
-        <li><a href="#">item 1</a></li>
-        <li><a href="#">item 2</a></li>
-        <li><a href="#">item 3</a></li>
-    </ul>
-</nav>
+
+
+
+
 
     </header>
     <!-- h2>lorem2^p>lorem -->
@@ -57,6 +62,3 @@
         nemo aliquid pariatur quam voluptates animi laudantium, aperiam
         consectetur nobis enim.
     </p>
-</body>
-
-</html>
