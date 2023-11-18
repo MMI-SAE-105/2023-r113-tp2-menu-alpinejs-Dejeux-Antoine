@@ -1,3 +1,3 @@
 - nom : dejeux
 - prénom : antoine
-- URL publique du site : https://roaring-belekoy-d61214.netlify.app
+- URL publique du site : https://alpinjsantoinedejeux.netlify.app (je ne sais pas pq rien ne s'affiche sur le site netlify)
