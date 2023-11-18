@@ -1,3 +1,3 @@
 - nom : dejeux
 - prénom : antoine
-- URL publique du site : https://alpinjsantoinedejeux.netlify.app (je ne sais pas pq rien ne s'affiche sur le site netlify)
+- URL publique du site : https://alpinjsantoinedejeux.netlify.app (reglage bug netlify , j'ai du copier coller le code de index-avec-commit dans index et le lien re fonctionne)
